@@ -1,0 +1,61 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+/**
+ * General Text Formatting
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Asar|Fugaz+One');
+
+$font-asar: 'Asar', serif; // base
+$font-fugaz: 'Fugaz One', cursive; //titles
+
+html {
+  //Uncomment below if you would like to use rems
+  font-family: $font-asar;
+  font-size: 62.5%;
+}
+body {
+  background-color: #333;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+a:link,
+a:visited {
+  color: salmon;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-fugaz;
+  margin: 2rem 0;
+}
+
+header,
+.main,
+footer {
+  max-width: 95rem;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  text-align: left;
+}
+
+.logo {
+  width: 20rem;
+}
+
+header {
+  text-align: center;
+}
+
+.embedded-player {
+  height: 10rem;
+  width: 35rem;
+}

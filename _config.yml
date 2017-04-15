@@ -13,10 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
 title: Plasma Cannon
 email: your-email@domain.com
-description: Punk Rock, with an infusion of Steam Punk, Danny Elfman's Blood, some fire water and the will to live.
+description: "Punk Rock, with an infusion of Steam Punk, Danny Elfman's Blood, some fire water and the will to live."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: PlasmaCannon916
@@ -36,3 +35,7 @@ defaults:
       path: "assets/img"
     values:
       image: true
+
+sass:
+  sass_dir: _sass
+  style: compressed
