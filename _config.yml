@@ -20,7 +20,7 @@ description: Punk Rock, with an infusion of Steam Punk, Danny Elfman's Blood, so
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: PlasmaCannon916
-github_username: patrickfgoddard 
+github_username: patrickfgoddard
 
 # Build settings
 markdown: kramdown
@@ -30,3 +30,9 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
