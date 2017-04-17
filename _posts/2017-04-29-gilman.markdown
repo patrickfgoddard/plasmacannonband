@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Plasma Cannon At 924 Gilman"
+date:   2017-04-01 19:00:00 -0700
+eventdate: 2017-04-29 19:00:00 -0700
+categories: show
+address: 924 Gilman Street, Berkeley, CA 94710
+moreinfo: http://www.924gilman.org
+---
+Punk Rock Prom Night!

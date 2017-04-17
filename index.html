@@ -20,21 +20,21 @@ layout: default
 
   <div class="shows">
     <h2>Shows</h2>
-    <div class="event-wrapper">
-      <div class="event-date">Sat April 29, 2017</div>
-      <div class="event-title">Plasma Cannon at 924 Gilman</div>
-      <div class="event-venue">
-        924 Gilman
-        <div class="address">
-          924 Gilman Street,<br>
-          Berkeley, CA 94710
-
+    {% for post in site.posts %}
+      {% if post.categories contains 'show' %}
+        <div class="event-wrapper">
+          <div class="event-date">{{ post.eventdate  | date: '%A, %B %d, %Y' }}</div>
+          <div class="event-title">{{ post.title}}</div>
+          <div class="event-venue">
+            924 Gilman
+            <div class="address">{{ post.address}}</div>
+          </div>
+          <div class="event-time">{{ post.eventdate  | date: '%I:%M %p' }}</div>
+          <!-- <div class="event-price">$13.00</div> -->
+          <a href="{{ post.moreinfo}}">More Info</a>
         </div>
-      </div>
-      <div class="event-time">7:00 PM</div>
-      <!-- <div class="event-price">$13.00</div> -->
-      <a href="http://www.924gilman.org">More Info</a>
-    </div>
+      {% endif %}
+    {% endfor %}
   </div>
 
   <div class="social">
