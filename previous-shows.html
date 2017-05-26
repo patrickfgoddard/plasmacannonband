@@ -5,23 +5,10 @@
 layout: default
 ---
 
-  <div class="about">
-    <h1>Plasma Cannon</h1>
-    <p>Punk Rock, with an infusion of Steam Punk, Danny Elfman's Blood, some fire water and the will to live.
-    </p>
-  </div>
-
-  <div class="listen">
-    <h2>Listen</h2>
-    <iframe class="embedded-player" src="https://embed.spotify.com/?uri=spotify%3Atrack%3A6If1QXEiXowxwfpoj6jGQc" width="300" height="100" frameborder="0" allowtransparency="true"></iframe>
-
-    <p>Listen to full album, <em><a href="https://open.spotify.com/album/43SZC3H7GpB5TtfkJkMqJ2">The Beginning Of The End</a></em>, on Spotify now!</p>
-  </div>
-
   <div class="shows">
-    <h2>Shows</h2>
+    <h2>Previous Shows</h2>
     {% for post in site.posts %}
-      {% if post.categories contains 'show' and post.eventdate >= site.time %}
+      {% if post.categories contains 'show' and post.eventdate < site.time %}
         <div class="event-wrapper">
           <div class="event-date">{{ post.eventdate  | date: '%A, %B %d, %Y' }}</div>
           <div class="event-title">{{ post.title}}</div>
@@ -34,7 +21,7 @@ layout: default
         </div>
       {% endif %}
     {% endfor %}
-    <p><a href="{{ site.baseurl }}{% link previous-shows.html %}">Previous Shows</a></p>
+    <p><a href="{{ site.baseurl }}{% link index.html %}">Home</a></p>
   </div>
 
   <div class="social">
